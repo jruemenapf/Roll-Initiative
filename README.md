@@ -1,2 +1,2 @@
-Roll-Initiative-
+Roll Initiative!
 ================
