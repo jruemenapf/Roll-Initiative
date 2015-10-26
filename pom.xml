@@ -3,14 +3,13 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jaru.rollinitiative</groupId>
-    <artifactId>rollinitiative</artifactId>
+    <artifactId>rollinitiativebackend</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rollinitiative Maven Webapp</name>
 
     <properties>
             <springFrameworkVersion>4.1.2.RELEASE</springFrameworkVersion>
-            <springDataMongoDbVersion>1.6.1.RELEASE</springDataMongoDbVersion>
+            <springDataMongoDbVersion>1.7.0.RELEASE</springDataMongoDbVersion>
             <mockitoVersion>1.9.5</mockitoVersion>
             <junitVersion>4.4</junitVersion>
     </properties>
@@ -42,6 +41,6 @@
     </dependencies>
 
     <build>
-        <finalName>rollinitiative</finalName>
+        <finalName>roll-initiative-backend</finalName>
     </build>
 </project>

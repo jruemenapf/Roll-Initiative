@@ -1,13 +1,16 @@
 package org.jaru.rollinitiative.model;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.List;
 
 /**
  * @author Jan
  */
 public class Monster {
+    private String id;
     private String name;
-    private int level;
+    private Level level;
     private String role;
     private String race;
     private List<Attack> attacks;
@@ -20,11 +23,11 @@ public class Monster {
         this.name = name;
     }
 
-    public int getLevel() {
+    public Level getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(Level level) {
         this.level = level;
     }
 
@@ -50,5 +53,13 @@ public class Monster {
 
     public void setAttacks(List<Attack> attacks) {
         this.attacks = attacks;
+    }
+
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Customer[id=%s, name='%s', Level[level='%s', experience='%s'], role='%s', race='%s']",
+                id, name, level.getLevel(), level.getExperience(), role, race);
     }
 }
